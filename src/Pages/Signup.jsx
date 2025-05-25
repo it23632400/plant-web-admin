@@ -28,7 +28,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(`https://plant-web-backend-production-abc123.up.railway.app/api/admin/register`, formData);
+      const response = await axios.post(`https://plant-web-backend-production.up.railway.app/api/admin/register`, formData);
       console.log(response);
       
       if (response.data.success) {
