@@ -29,6 +29,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(`${backendUrl}api/admin/register`, formData);
+      console.log(response);
       
       if (response.data.success) {
       
